@@ -171,8 +171,9 @@ img {
   border-style: none; }
 
 img.image-head{
-  width:30%;
+  width:40%;
   height:auto;
+  padding: 30px;
 }
 
 svg {
@@ -7613,7 +7614,7 @@ a.card {
   background: #555A64; }
 
 .bg-gradient {
-  background: linear-gradient(to right, #009b72, #046865) !important; }
+  background: linear-gradient(to right, #3F51B5, #25337D) !important; }
 
 .bg-primary-alt {
   background-color: rgba(0, 155, 114, 0.1); }
