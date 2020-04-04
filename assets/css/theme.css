@@ -9357,7 +9357,7 @@ img.flex-fill {
   transform: scale(3);
   -webkit-mask-image: url("../img/blobs/blob-1.svg");
           mask-image: url("../img/blobs/blob-1.svg");
-  -webkit-mask-size: 10% 100%;
+  -webkit-mask-size: 100% 100%;
           mask-size: 100% 100%; }
   .blob.blob-2 {
     -webkit-mask-image: url("../img/blobs/blob-2.svg");
