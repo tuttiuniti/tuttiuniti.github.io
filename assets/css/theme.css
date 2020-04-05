@@ -171,9 +171,8 @@ img {
   border-style: none; }
 
 img.img-head{
-  width: 40%;
+  width: 20%;
   height: auto;
-  padding: 1%;
 }
 
 svg {
