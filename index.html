@@ -117,7 +117,8 @@
               <div class="col-md-6 mb-3 mb-md-4" data-aos="fade-up" data-aos-delay="30">
                 <div class="card card-body bg-white min-vh-md-30 hover-box-shadow">
                   <div class="flex-fill">
-                    <div><img src="assets/img/icons/theme/general/user.svg" alt="Icon for Display-1" class="icon bg-primary mb-4 mb-sm-0" data-inject-svg></div>
+                    <img src="assets/img/icons/theme/general/user.svg" alt="Icon for Display-1" class="icon bg-primary mb-4 mb-sm-0" data-inject-svg>
+                    <br /><br />
                     <h4 class="h3">Registrati come Volontario</h4>
                     <p>In tanti hanno bisogno di te per svolgere le piccole attività giornaliere come fare la spesa. Se hai la possibilità di aiutare, registrati come Volontario e aspetta che qualcuno nella tua zona richieda il tuo aiuto tramite il sito. Puoi anche condividere il tuo profilo e raccogliere donazioni da distribuire.</p>
                   </div>
@@ -145,7 +146,94 @@
       <div class="container">
         <div class="row section-title justify-content-center text-center">
           <div class="col-md-9 col-lg-8 col-xl-7">
-            <h3 class="display-4">Aiuta ora</h3>
+            <h3 class="display-4">Trova la tua attività commerciale o associazione preferita</h3>
+          </div>
+          <br><br>
+          <div class="col-lg-6 col-xl-5 col-md-9" data-aos="fade-left" data-aos-delay="250">
+              <div class="card card-body shadow-lg">
+                <form onSubmit="return process();">
+                  <div class="form-group">
+                    <label for="regione">Cerca per nome della regione o città</label>
+                    <input id="regione" name="contact-name" type="text" class="form-control" placeholder="Scrivi qui">
+                    <div class="invalid-feedback">
+                      Please type your name.
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="cerca">Cerca per nome dell'attività</label>
+                    <input id="cerca" name="cerca" type="text" class="form-control" placeholder="Scrivi qui">
+                    <div class="invalid-feedback">
+                      Please type your name.
+                    </div>
+                  </div>
+                  <div class="d-none alert alert-success w-100 my-md-3" role="alert" data-success-message>
+                    Thanks, a member of our team will be in touch shortly.
+                  </div>
+                  <div class="d-none alert alert-danger w-100 my-md-3" role="alert" data-error-message>
+                    Please fill all fields correctly.
+                  </div>
+                  <div data-recaptcha data-sitekey="INSERT_YOUR_RECAPTCHA_V2_SITEKEY_HERE" data-size="invisible" data-badge="bottomleft"></div>
+                  <button class="btn btn-primary btn-block btn-loading" type="submit" data-loading-text="Requesting Demo">
+                    <!-- Icon for loading animation -->
+                    <svg class="icon bg-white" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <title>Icon For Loading</title>
+                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g>
+                          <polygon points="0 0 24 0 24 24 0 24" opacity="0"></polygon>
+                        </g>
+                        <path d="M12,4 L12,6 C8.6862915,6 6,8.6862915 6,12 C6,15.3137085 8.6862915,18 12,18 C15.3137085,18 18,15.3137085 18,12 C18,10.9603196 17.7360885,9.96126435 17.2402578,9.07513926 L18.9856052,8.09853149 C19.6473536,9.28117708 20,10.6161442 20,12 C20,16.418278 16.418278,20 12,20 C7.581722,20 4,16.418278 4,12 C4,7.581722 7.581722,4 12,4 Z"
+                        fill="#000000" fill-rule="nonzero" transform="translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000) "></path>
+                      </g>
+                    </svg>
+                    <span>Request Demo</span>
+                  </button>
+                </form>
+
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient text-white pb-0">
+      <div class="container">
+        <div class="row section-title justify-content-center text-center">
+          <div class="col-md-9 col-lg-8 col-xl-7">
+            <h3 class="display-4">Insieme ai nostri amici nel 🌎</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-9 d-flex flex-wrap justify-content-center">
+            <div class="m-2">
+              <div class="media rounded align-items-center px-3 px-md-4 py-2 py-md-3 bg-white text-dark">
+                <img src="https://comprahoy.mx/wp-content/uploads/2020/03/logo-comprahoy@226x-1.png" alt="CompraHoy logo" class="icon icon-sm mr-3">
+                <h5 class="mb-0">CompraHoy - Messico</h5>
+              </div>
+            </div>
+            <div class="m-2">
+              <div class="media rounded align-items-center px-3 px-md-4 py-2 py-md-3 bg-white text-dark">
+                <img src="https://user-assets.sharetribe.com/images/communities/wide_logos/105430/header_highres/336x80_Logo.png?1584767748" alt="LocalSpots" class="icon icon-sm mr-3">
+                <h5 class="mb-0">LocalSpots - Australia</h5>
+              </div>
+            </div>
+            <div class="m-2">
+              <div class="media rounded align-items-center px-3 px-md-4 py-2 py-md-3 bg-white text-dark">
+                <img src="assets/img/logos/product/treva.svg" alt="Treva logo" class="icon icon-sm mr-3">
+                <h5 class="mb-0">Saveourfaves - Silicon Valley</h5>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider divider-bottom bg-light"></div>
+    </section>
+
+    <section class="pb-0">
+      <div class="container">
+        <div class="row section-title justify-content-center text-center">
+          <div class="col-md-9 col-lg-8 col-xl-7">
+            <h3 class="display-4">Scopri le attivita', associazioni, o volontari nella tua zona</h3>
           </div>
           <div class="d-flex flex-column flex-sm-row mt-4 mt-md-5 justify-content-center" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://tuttiuniti.sharetribe.com/" class="btn btn-primary btn-lg mx-sm-2 my-1 my-sm-0" data-smooth-scroll>Compra o Dona</a>
@@ -217,6 +305,10 @@
     <!-- Removes page load animation when window is finished loading -->
     <script type="text/javascript">
       window.addEventListener("load",function(){document.querySelector('body').classList.add('loaded');});
+    </script>
+    <script>
+    function process()
+    {var regione = "https://tuttiuniti.sharetribe.com/?category=" + document.getElementById("regione").value + "&q=" + document.getElementById("cerca").value; location.href = regione; return false;}
     </script>
 
   </body>
