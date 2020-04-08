@@ -8125,6 +8125,9 @@ a {
   font-weight: 700; }
   a.lead {
     font-weight: 700; }
+  a.menu{
+    font-weight: 200;
+  }
 
 mark {
   color: inherit;
